@@ -1,17 +1,40 @@
-.top {
-  .left{
-    .flex(row wrap);
-  nav {
-    @media @desktop {
-      // .flex(row wrap);
-      // .placement(space-between, center);
-    }
-  }
-}
-}
-
 .container {
   @media @desktop {
-    //   .flex(column nowrap);
+    .flex(column wrap);
+  }
+  .top {
+    @media @desktop {
+      .flex(row wrap);
+      .position(space-between, baseline);
+    }
+    .top-left {
+      @media @desktop {
+        .dimensions(47%, auto);
+        .flex(row wrap);
+        .position(space-between, baseline);
+      }
+      nav {
+        @media @desktop {
+          .flex(row wrap);
+          .position(space-evenly, center);
+        }
+        a {
+          @media @desktop {
+            padding: 0% 10px;
+          }
+        }
+      }
+    }
+    .top-right {
+      @media @desktop {
+        .flex(row wrap);
+        .position(space-evenly, center);
+      }
+      a {
+        @media @desktop {
+          padding: 0% 10px;
+        }
+      }
+    }
   }
 }
