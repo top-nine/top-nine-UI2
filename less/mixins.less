@@ -1,10 +1,12 @@
 // flex
-.flex (@direction,@wrap,@justify,@align) {
+.flex (@flex-flow) {
   display: flex;
-  flex-direction: @direction;
-  flex-wrap: @wrap;
-  justify-content: @justify;
-  align-items: @align;
+  flex-flow: @flex-flow;
+}
+
+.position (@justify,@align) {
+    justify-content: @justify;
+    align-items: @align;
 }
 
 // display
