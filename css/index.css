@@ -155,6 +155,9 @@ h3 {
 h4 {
   font-size: 2rem;
 }
+h5 {
+  font-size: 1.5rem;
+}
 strong {
   font-weight: bold;
 }
@@ -167,8 +170,18 @@ img {
   height: auto;
 }
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+a:visited {
+  text-decoration: none;
+}
+.fa {
+  font-size: 2rem;
+}
+.fa-home {
+  font-size: 5rem;
 }
 .container {
   max-width: 450px;
@@ -178,59 +191,189 @@ a {
 @media (min-width: 500px) {
   .container {
     max-width: 1000px;
-  }
-}
-@media (min-width: 500px) {
-  .container {
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+.top-bg {
+  background-image: linear-gradient(#00bfff, #87cefa);
+  padding: 1% 0%;
+  margin-bottom: 2%;
+}
+.top-bg header {
+  width: 70%;
+  margin: 0 auto;
+}
 @media (min-width: 500px) {
-  .container .top {
+  .top-bg header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 }
-@media (min-width: 500px) {
-  .container .top .top-left {
-    width: 47%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: baseline;
-  }
+.top-bg header .logo h1 {
+  color: white;
+}
+.top-bg header .logo h1:hover {
+  opacity: 0.5;
 }
 @media (min-width: 500px) {
-  .container .top .top-left nav {
+  .top-bg header nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
   }
 }
+.top-bg header nav a {
+  color: #fff;
+}
+.top-bg header nav a:hover {
+  opacity: 0.5;
+}
 @media (min-width: 500px) {
-  .container .top .top-left nav a {
-    padding: 0% 10px;
+  .top-bg header nav a {
+    padding: 0% 35px;
   }
 }
 @media (min-width: 500px) {
-  .container .top .top-right {
+  .top-bg .top-right {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
   }
 }
+.top-bg .top-right a {
+  color: #fff;
+}
+.top-bg .top-right a:hover {
+  opacity: 0.5;
+}
 @media (min-width: 500px) {
-  .container .top .top-right a {
+  .top-bg .top-right a {
     padding: 0% 10px;
   }
 }
-.members {
+.headline-bg {
+  background-color: #fff;
+}
+.headline-bg .headline {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.description-bg {
+  background-color: #f6f9fc;
+}
+.description-bg .description {
+  max-width: 50%;
+  padding: 2% 0%;
+  margin: 0 auto;
+}
+.description-bg .description ul li.long {
+  width: 60%;
+}
+.description-bg .description .sign-up-form {
+  width: 120px;
+  text-align: center;
+  padding: 1.5% 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  background-color: pink;
+  border-radius: 5px;
+}
+.description-bg .description .sign-up-form a:hover {
+  opacity: 0.5;
+}
+.steps-bg {
+  background-color: #e9f6fe;
+  padding: 2% 0%;
+}
+.steps-bg .steps {
+  width: 65%;
+}
+.steps-bg .steps ul {
+  text-align: -webkit-right;
+}
+.steps-bg .steps ul li {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  padding: 2% 0%;
+  line-height: 1.8rem;
+}
+.why-bg {
+  background-color: #f6f9fc;
+  border-bottom: 2px solid rgba(207, 215, 223, 0.25);
+}
+@media (min-width: 500px) {
+  .why-bg .why {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) {
+  .why-bg .why ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.why-bg .why ul li {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  padding: 2% 0%;
+  line-height: 1.8rem;
+}
+.footer-bg {
+  background-color: #e0eeff;
+}
+.footer-bg footer {
+  max-width: 70%;
+  padding: 2% 0%;
+  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.footer-bg footer .column {
+  width: 33%;
+}
+.footer-bg footer .column h5 {
+  padding-bottom: 2%;
+  opacity: 0.5;
+}
+.footer-bg footer .column ul li {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  padding: 2% 0%;
+  line-height: 1.8rem;
+}
+.footer-bg footer .column ul li a {
+  opacity: 0.5;
+}
+.footer-bg footer .column ul li a:hover {
+  opacity: 1;
+}
+@media (min-width: 500px) {
+  .members {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) {
+  .members .member {
+    width: 45%;
+  }
 }
