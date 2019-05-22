@@ -1,11 +1,81 @@
-.members {
-  @media @desktop {
-    .flex(row wrap);
-    .position(space-between,center);
-  }
-  .member {
+.meet-bg {
+  background-color: #f6f9fc;
+  border-bottom: 2px solid rgba(207, 215, 223, 0.25);
+  .meet-wrapper {
+    width: 90%;
+    margin: 0 auto;
     @media @desktop {
-      width: 45%;
+      height: auto;
+      width: 50%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    .meet-heading {
+      color: #6772e5;
+      margin-bottom: 4%;
+      .flex(row wrap);
+      .position(center, center);
+    }
+    .members {
+      .flex(row wrap);
+      .position(space-between, center);
+      .member-card {
+        width: 47%;
+        padding: 20px;
+        margin-bottom: 4%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+          0 8px 16px -8px rgba(0, 0, 0, 0.3),
+          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+        transition-property: color, background-color, box-shadow, transform,
+          -webkit-box-shadow, -webkit-transform;
+        transition-duration: 0.15s;
+        &:hover {
+          box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+            0 18px 36px -18px rgba(0, 0, 0, 0.3),
+            0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+          color: #32325d !important;
+          transform: translateY(-2px);
+        }
+        img {
+          border-radius: 5px;
+        }
+        .name {
+          h3 {
+            margin-top: 15px;
+            font-weight: 400;
+          }
+        }
+        .title {
+          h4 {
+            margin-top: 15px;
+            opacity: 0.5;
+          }
+        }
+        .social {
+          margin-top: 15px;
+          a.fa {
+            padding-right: 4%;
+          }
+          a.fa-facebook-square {
+            color: #3b5998;
+          }
+
+          a.fa-twitter-square {
+            color: #55acee;
+
+            &:hover {
+              animation-name: twiddle;
+              animation-duration: 0.5s;
+              animation-iteration-count: infinite;
+            }
+          }
+          a.fa-github {
+            color: #333;
+          }
+        }
+      }
     }
   }
 }
