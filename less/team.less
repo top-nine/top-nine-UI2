@@ -2,12 +2,11 @@
   background-color: #f6f9fc;
   border-bottom: 2px solid rgba(207, 215, 223, 0.25);
   .meet-wrapper {
-    height: 100vh;
     width: 90%;
     margin: 0 auto;
     @media @desktop {
       height: auto;
-      width: 50%;
+      width: 45%;
       margin-top: 2%;
       margin-bottom: 2%;
     }
@@ -34,13 +33,13 @@
           0 -6px 16px -6px rgba(0, 0, 0, 0.025);
         transition-property: color, background-color, box-shadow, transform,
           -webkit-box-shadow, -webkit-transform;
-        transition-duration: 0.15s;
+        transition-duration: 0.2s;
         &:hover {
-          box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-            0 18px 36px -18px rgba(0, 0, 0, 0.3),
-            0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-          color: #32325d !important;
-          transform: translateY(-2px);
+          transform: scale(1.05);
+          transition-timing-function: ease-in;
+          transition-delay: 0.1s;
+          box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+            0 3px 6px rgba(0, 0, 0, 0.08);
         }
         @media @desktop {
           width: 47%;
