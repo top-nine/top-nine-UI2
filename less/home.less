@@ -1,14 +1,7 @@
 // TOP
 .top-bg {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#00bfff),
-    to(#87cefa)
-  );
-  background-image: linear-gradient(#00bfff, #87cefa);
-  padding: 1% 0%;
+  background: linear-gradient(150deg, #53f 15%, #05d5ff 95%);
+  padding: 5px 0px;
   header {
     height: 817px;
     margin: 0 auto;
@@ -20,6 +13,7 @@
       .flex(row wrap);
       .position(space-between, center);
       height: auto;
+      padding: 15px 0px;
     }
     .logo {
       h1 {
@@ -46,7 +40,7 @@
           opacity: 0.5;
         }
         @media @desktop {
-          padding: 0% 35px;
+          padding: 0px 35px;
         }
       }
       a.fa-home {
@@ -63,14 +57,14 @@
         .position(space-evenly, center);
       }
       a {
-        margin: 0% 10px;
+        margin: 0px 10px;
         font-size: 1.4rem;
         color: #fff;
         &:hover {
           opacity: 0.5;
         }
         @media @desktop {
-          padding: 0% 10px;
+          padding: 0px 10px;
         }
       }
       a.fa-facebook-square {
@@ -93,7 +87,7 @@
       align-items: center;
       a#login {
         color: white;
-          margin-left: 5px;
+        margin-left: 5px;
       }
     }
     .scroll-down-btn {
@@ -139,6 +133,9 @@
       // }
     }
   }
+  header.team-header {
+    height: auto;
+  }
 }
 // DESCRIPTION
 .description-bg {
@@ -158,25 +155,27 @@
         .flex(row wrap);
         .position(center, center);
         margin: 0 auto;
-        margin-top: 2%;
+        margin-top: 10px;
+        @media @desktop {
+          margin-top: 20px;
+        }
       }
     }
     .headline {
       height: 10%;
       text-align: center;
+      color: #24b47e;
+      font-size: 2rem;
       @media @desktop {
         height: auto;
-      }
-      h2 {
-        font-size: 2rem;
-        color: #24b47e;
+        font-size: 3rem;
       }
     }
     .description-wrapper {
       height: 80%;
       @media @desktop {
         height: auto;
-        max-width: 60%;
+        max-width: 70%;
         padding-top: 20px;
         margin: 0 auto;
         .flex(row wrap);
@@ -202,42 +201,44 @@
         height: 60%;
         @media @desktop {
           width: 47%;
-          height: auto;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          height: 481px;
         }
-        @media @desktop {
-          .flex(column wrap);
-          .position(flex-start, flex-start);
-        }
-        .description-question {
+        .description-question-and-answer {
           text-align: center;
           @media @desktop {
             text-align: start;
           }
-          p {
-            line-height: 2;
-          }
-          p.question {
+          .description-question {
             color: #3297d3;
-            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 25px;
           }
-          p.answer {
+          .description-answer {
             color: #3297d3;
+            opacity: 0.7;
+            font-size: 2rem;
           }
         }
         .description-text {
-          .flex(column wrap);
-          .position(space-between, start);
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: start;
           ul {
             @media @desktop {
             }
             li {
               opacity: 0.8;
-              padding: 2% 0%;
+              padding: 10px 0px;
               font-size: 1rem;
               line-height: 1.5rem;
               @media @desktop {
                 font-size: 1.5rem;
-            }
+              }
             }
             li.long {
               line-height: 2rem;
@@ -251,9 +252,7 @@
       .start-button {
         text-align: center;
         border-radius: 5px;
-        margin: 20px 0px;
         @media @desktop {
-          margin-top: 5%;
         }
         a {
           white-space: nowrap;
@@ -289,8 +288,8 @@
 }
 // STEPS
 .steps-bg {
-  background-color: lighten(#87cefa, 20%);
-  padding: 2% 0%;
+  background-color: #fcf6f6;
+  padding: 10px 0px;
   .steps-wrapper {
     max-width: 80%;
     margin: 0 auto;
@@ -315,9 +314,8 @@
         li {
           font-size: 1rem;
           opacity: 0.8;
-          padding: 2% 0%;
+          padding: 10px 0px;
           line-height: 1.5rem;
-          color: #006400;
           @media @desktop {
             font-size: 1.5rem;
           }
@@ -340,53 +338,61 @@
 .why-bg {
   background-color: #fff;
   border-bottom: 2px solid rgba(207, 215, 223, 0.25);
-  padding: 20px 0px;
   .why-wrapper {
     max-width: 80%;
+    padding: 30px 0px 40px 0px;
     margin: 0 auto;
     .flex(column wrap);
     @media @desktop {
-      width: 70%;
-      padding: 2% 0%;
+      width: 63%;
       margin: 0 auto;
       .flex(row wrap);
       .position(space-between, center);
     }
-    .why-text {
-      @media @desktop {
-        text-align: right;
-        width: 47%;
-        padding-bottom: 1%;
-      }
-      .why-heading {
-        padding: 20px 0px;
+    .why-headings-text {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      .why-headings {
         text-align: center;
+        padding: 20px 0px;
         @media @desktop {
-          padding: 3% 0% 1% 0%;
-          margin-bottom: 2%;
         }
         @media @desktop {
           text-align: right;
         }
-        h3 {
+        .why-question {
           color: #b76ac4;
+          font-size: 2rem;
+          margin: 10px 0px;
+        }
+        .why-answer {
+          color: #b76ac4;
+          opacity: 0.5;
+          font-size: 1.5rem;
         }
       }
-      ul {
+      .why-text {
         @media @desktop {
-          .flex(column wrap);
+          text-align: right;
         }
-        li {
-          font-size: 1rem;
-          opacity: 0.8;
-          padding: 2% 0%;
-          line-height: 1.5rem;
+
+        ul {
           @media @desktop {
-            font-size: 1.5rem;
+            .flex(column wrap);
           }
-        }
-        li.long {
-          line-height: 2rem;
+          li {
+            font-size: 1rem;
+            opacity: 0.8;
+            padding: 10px 0px;
+            line-height: 1.5rem;
+            @media @desktop {
+              font-size: 1.5rem;
+            }
+          }
+          li.long {
+            line-height: 2rem;
+          }
         }
       }
     }
@@ -406,7 +412,7 @@
         @media @desktop {
           width: 40%;
           height: 40%;
-          margin-left: 80px;
+          margin-left: 100px;
         }
       }
     }
@@ -415,21 +421,19 @@
 // TESTIMONIAL
 .testimonials-bg {
   .testimonials-video-wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 40px;
     .flex(column wrap);
     @media @desktop {
-      width: 70%;
+      width: 60%;
       padding: 40px 0px;
       margin: 0 auto;
       .flex(row wrap);
       .position(space-between, center);
     }
     .testimonials-dots-wrapper {
-      margin-top: 20px;
-      margin-bottom: 20px;
       @media @desktop {
         .flex(column wrap);
         width: 450px;
@@ -502,7 +506,7 @@
     }
     .testimonial-video {
       box-sizing: content-box;
-      padding: 40px;
+      padding: 10px;
       background-color: #fff;
       border-radius: 8px;
       box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
@@ -521,9 +525,6 @@
       @media @desktop {
         width: 47%;
       }
-      // iframe {
-      //   // width: 100%;
-      // }
     }
   }
 }
@@ -531,7 +532,7 @@
 .footer-bg {
   background-color: #f6f9fc;
   footer {
-    padding: 2% 0%;
+    padding: 10px 0px;
     margin: 0 auto;
     color: #8898aa;
     line-height: 30px;
