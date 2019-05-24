@@ -274,13 +274,13 @@ svg.dot:hover {
 }
 @media (min-width: 500px) {
   .top-bg header {
-    width: 80%;
+    width: 100%;
+    padding: 0 6%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 15px 0px;
   }
 }
 .top-bg header .divider {
@@ -317,25 +317,17 @@ svg.dot:hover {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 55%;
   }
 }
 .top-bg header nav a {
-  color: #fff;
+  color: white;
   padding: 10px 0px;
-}
-@media (min-width: 500px) {
-  .top-bg header nav a {
-    padding: 0;
-    margin: 0;
-  }
 }
 .top-bg header nav a:hover {
   opacity: 0.5;
 }
 @media (min-width: 500px) {
-  .top-bg header nav a {
-    padding: 0px 35px;
-  }
 }
 .top-bg header nav a.fa-home {
   font-size: 2rem;
@@ -352,6 +344,7 @@ svg.dot:hover {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    width: 15%;
   }
 }
 .top-bg header .top-social a {
@@ -364,11 +357,11 @@ svg.dot:hover {
 }
 @media (min-width: 500px) {
   .top-bg header .top-social a {
-    padding: 0px 10px;
+    margin: 0;
   }
 }
 .top-bg header .top-social a.fa-facebook-square {
-  color: white;
+  color: #8a8686;
 }
 .top-bg header .top-social a.fa-twitter {
   color: white;
@@ -380,8 +373,13 @@ svg.dot:hover {
 }
 .top-bg header .login {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   align-items: center;
+}
+@media (min-width: 500px) {
+  .top-bg header .login {
+    width: 10%;
+  }
 }
 .top-bg header .login a#login {
   color: white;
