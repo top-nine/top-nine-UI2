@@ -170,7 +170,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: 62.5%;
-  font-family: Camphor, Open Sans, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
