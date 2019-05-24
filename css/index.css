@@ -274,7 +274,7 @@ svg.dot:hover {
 }
 @media (min-width: 500px) {
   .top-bg header {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -283,10 +283,26 @@ svg.dot:hover {
     padding: 15px 0px;
   }
 }
-.top-bg header .logo h1 {
-  color: white;
+.top-bg header .divider {
+  display: none;
 }
-.top-bg header .logo h1:hover {
+@media (min-width: 500px) {
+  .top-bg header .divider {
+    display: block;
+  }
+}
+.top-bg header .logo {
+  width: 40%;
+}
+@media (min-width: 500px) {
+  .top-bg header .logo {
+    width: 10%;
+  }
+}
+.top-bg header .logo img {
+  width: 100%;
+}
+.top-bg header .logo img:hover {
   opacity: 0.5;
 }
 .top-bg header nav {
@@ -305,10 +321,12 @@ svg.dot:hover {
 }
 .top-bg header nav a {
   color: #fff;
+  padding: 10px 0px;
 }
 @media (min-width: 500px) {
   .top-bg header nav a {
     padding: 0;
+    margin: 0;
   }
 }
 .top-bg header nav a:hover {
@@ -352,10 +370,10 @@ svg.dot:hover {
 .top-bg header .top-social a.fa-facebook-square {
   color: white;
 }
-.top-bg header .top-social a.fa-twitter-squre {
+.top-bg header .top-social a.fa-twitter {
   color: white;
 }
-.top-bg header .top-social a.fa-twitter-squre:hover {
+.top-bg header .top-social a.fa-twitter:hover {
   animation-name: twiddle;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -411,11 +429,11 @@ svg.dot:hover {
   height: auto;
   display: flex;
   flex-flow: column wrap;
-  height: 300px;
+  height: 210px;
 }
 @media (min-width: 500px) {
   .top-bg header.team-header {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -424,13 +442,13 @@ svg.dot:hover {
     padding: 15px 0px;
   }
 }
-.top-bg header.team-header nav {
-  height: 125px;
-}
 @media (min-width: 500px) {
   .top-bg header.team-header nav {
     height: auto;
   }
+}
+.top-bg .logo {
+  width: 40%;
 }
 .description-bg {
   background-color: #f6f9fc;
@@ -439,7 +457,8 @@ svg.dot:hover {
   height: 817px;
   max-width: 80%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -449,6 +468,7 @@ svg.dot:hover {
   .description-bg .description-headline-wrapper {
     height: auto;
     padding-top: 20px;
+    text-align: left;
     display: flex;
     flex-flow: column wrap;
   }
@@ -464,6 +484,7 @@ svg.dot:hover {
 @media (min-width: 500px) and (min-width: 500px) {
   .description-bg .description-headline-wrapper .headline {
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .description-bg .description-headline-wrapper .headline {
@@ -484,7 +505,7 @@ svg.dot:hover {
 @media (min-width: 500px) {
   .description-bg .description-headline-wrapper .description-wrapper {
     height: auto;
-    max-width: 70%;
+    max-width: 80%;
     padding-top: 20px;
     margin: 0 auto;
     display: flex;
@@ -513,9 +534,6 @@ svg.dot:hover {
     height: auto;
   }
 }
-.description-bg .description-headline-wrapper .description-wrapper .description {
-  height: 60%;
-}
 @media (min-width: 500px) {
   .description-bg .description-headline-wrapper .description-wrapper .description {
     width: 47%;
@@ -537,12 +555,22 @@ svg.dot:hover {
 .description-bg .description-headline-wrapper .description-wrapper .description .description-question-and-answer .description-question {
   color: #3297d3;
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+@media (min-width: 500px) {
+  .description-bg .description-headline-wrapper .description-wrapper .description .description-question-and-answer .description-question {
+    margin-bottom: 25px;
+  }
 }
 .description-bg .description-headline-wrapper .description-wrapper .description .description-question-and-answer .description-answer {
   color: #3297d3;
   opacity: 0.7;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 500px) {
+  .description-bg .description-headline-wrapper .description-wrapper .description .description-question-and-answer .description-answer {
+    font-size: 2rem;
+  }
 }
 .description-bg .description-headline-wrapper .description-wrapper .description .description-text {
   display: flex;
@@ -572,6 +600,12 @@ svg.dot:hover {
 .description-bg .description-headline-wrapper .description-wrapper .start-button {
   text-align: center;
   border-radius: 5px;
+  margin-top: 10px;
+}
+@media (min-width: 500px) {
+  .description-bg .description-headline-wrapper .description-wrapper .start-button {
+    margin: 0;
+  }
 }
 .description-bg .description-headline-wrapper .description-wrapper .start-button a {
   white-space: nowrap;
@@ -603,7 +637,8 @@ svg.dot:hover {
   padding: 10px 0px;
 }
 .steps-bg .steps-wrapper {
-  max-width: 80%;
+  max-width: 70%;
+  text-align: center;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
@@ -613,6 +648,7 @@ svg.dot:hover {
 @media (min-width: 500px) {
   .steps-bg .steps-wrapper {
     width: 70%;
+    padding-bottom: 20px;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -677,15 +713,21 @@ svg.dot:hover {
 .why-bg .why-wrapper .why-headings-text {
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .why-bg .why-wrapper .why-headings-text {
+    align-items: start;
+    text-align: start;
+  }
 }
 .why-bg .why-wrapper .why-headings-text .why-headings {
-  text-align: center;
   padding: 20px 0px;
 }
 @media (min-width: 500px) {
   .why-bg .why-wrapper .why-headings-text .why-headings {
-    text-align: right;
+    text-align: left;
   }
 }
 .why-bg .why-wrapper .why-headings-text .why-headings .why-question {
@@ -697,11 +739,6 @@ svg.dot:hover {
   color: #b76ac4;
   opacity: 0.5;
   font-size: 1.5rem;
-}
-@media (min-width: 500px) {
-  .why-bg .why-wrapper .why-headings-text .why-text {
-    text-align: right;
-  }
 }
 @media (min-width: 500px) {
   .why-bg .why-wrapper .why-headings-text .why-text ul {
@@ -732,7 +769,6 @@ svg.dot:hover {
 }
 @media (min-width: 500px) {
   .why-bg .why-wrapper .why-img {
-    order: 99;
     width: 47%;
     margin: 0 auto;
     display: flex;
@@ -803,10 +839,15 @@ svg.dot:hover {
   padding-bottom: 5px;
 }
 .testimonials-bg .testimonials-video-wrapper .testimonials-dots-wrapper .testimonials-wrapper .testimonial-review {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: italic;
   padding-bottom: 5px;
   padding-top: 10px;
+}
+@media (min-width: 500px) {
+  .testimonials-bg .testimonials-video-wrapper .testimonials-dots-wrapper .testimonials-wrapper .testimonial-review {
+    font-size: 1.3rem;
+  }
 }
 .testimonials-bg .testimonials-video-wrapper .testimonials-dots-wrapper .hover-dots {
   display: flex;
@@ -814,10 +855,12 @@ svg.dot:hover {
   justify-content: space-evenly;
   align-items: start;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 500px) {
   .testimonials-bg .testimonials-video-wrapper .testimonials-dots-wrapper .hover-dots {
     margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 .testimonials-bg .testimonials-video-wrapper .testimonials-dots-wrapper .hover-dots .dot-one svg circle {
@@ -917,14 +960,13 @@ svg.dot:hover {
 .meet-bg .meet-wrapper .meet-heading {
   color: #6772e5;
   margin: 20px 0px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
 }
 @media (min-width: 500px) {
   .meet-bg .meet-wrapper .meet-heading {
     margin-bottom: 40px;
+    font-size: 3rem;
   }
 }
 .meet-bg .meet-wrapper .members {
@@ -946,6 +988,7 @@ svg.dot:hover {
   margin: 0 auto;
   padding: 20px;
   margin-bottom: 4%;
+  text-align: center;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);

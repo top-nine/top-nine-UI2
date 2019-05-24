@@ -9,15 +9,25 @@
     .flex(column wrap);
     .position(space-evenly, center);
     @media @desktop {
-      width: 70%;
+      width: 80%;
       .flex(row wrap);
       .position(space-between, center);
       height: auto;
       padding: 15px 0px;
     }
+    .divider {
+      display: none;
+      @media @desktop {
+        display: block;
+      }
+    }
     .logo {
-      h1 {
-        color: white;
+      width: 40%;
+      @media @desktop {
+        width: 10%;
+      }
+      img {
+        width: 100%;
         &:hover {
           opacity: 0.5;
         }
@@ -32,8 +42,10 @@
       }
       a {
         color: #fff;
+          padding: 10px 0px;
         @media @desktop {
           padding: 0;
+          margin: 0;
         }
         &:hover {
           opacity: 0.5;
@@ -70,7 +82,7 @@
         color: white;
       }
 
-      a.fa-twitter-squre {
+      a.fa-twitter {
         color: white;
 
         &:hover {
@@ -136,22 +148,23 @@
     height: auto;
     display: flex;
     flex-flow: column wrap;
-    height: 300px;
+    height: 210px;
     @media @desktop {
-      width: 70%;
+      width: 80%;
       .flex(row wrap);
       .position(space-between, center);
       height: auto;
       padding: 15px 0px;
     }
   nav {
-    height: 125px;
     @media @desktop {
       height: auto;
     }
   }
   }
-
+  .logo {
+    width: 40%;
+  }
 }
 // DESCRIPTION
 .description-bg {
@@ -160,12 +173,14 @@
     height: 817px;
     max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
     .flex(column wrap);
     .position(center, center);
     @media @desktop {
       height: auto;
       padding-top: 20px;
+      text-align: left;
       .flex(column wrap);
       .headline {
         .flex(row wrap);
@@ -174,6 +189,7 @@
         margin-top: 10px;
         @media @desktop {
           margin-top: 20px;
+          margin-bottom: 20px;
         }
       }
     }
@@ -191,7 +207,7 @@
       height: 80%;
       @media @desktop {
         height: auto;
-        max-width: 70%;
+        max-width: 80%;
         padding-top: 20px;
         margin: 0 auto;
         .flex(row wrap);
@@ -214,7 +230,7 @@
         }
       }
       .description {
-        height: 60%;
+        // height: 60%;
         @media @desktop {
           width: 47%;
           display: flex;
@@ -231,12 +247,20 @@
           .description-question {
             color: #3297d3;
             font-size: 2rem;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            
+            @media @desktop {
+              margin-bottom: 25px;
+            }
           }
           .description-answer {
             color: #3297d3;
             opacity: 0.7;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            
+            @media @desktop {
+              font-size: 2rem;
+            }
           }
         }
         .description-text {
@@ -268,7 +292,9 @@
       .start-button {
         text-align: center;
         border-radius: 5px;
+        margin-top: 10px;
         @media @desktop {
+          margin: 0;
         }
         a {
           white-space: nowrap;
@@ -307,12 +333,14 @@
   background-color: #fcf6f6;
   padding: 10px 0px;
   .steps-wrapper {
-    max-width: 80%;
+    max-width: 70%;
+    text-align: center;
     margin: 0 auto;
     .flex(column wrap);
     .position(flex-start, center);
     @media @desktop {
       width: 70%;
+      padding-bottom: 20px;
       margin: 0 auto;
       .flex(row wrap);
       .position(space-between, center);
@@ -368,14 +396,16 @@
     .why-headings-text {
       display: flex;
       flex-flow: column;
-      align-items: flex-end;
+      align-items: center;
+      text-align: center;
+      @media @desktop {
+        align-items: start;
+        text-align: start;
+      }
       .why-headings {
-        text-align: center;
         padding: 20px 0px;
         @media @desktop {
-        }
-        @media @desktop {
-          text-align: right;
+          text-align: left;
         }
         .why-question {
           color: #b76ac4;
@@ -389,9 +419,6 @@
         }
       }
       .why-text {
-        @media @desktop {
-          text-align: right;
-        }
 
         ul {
           @media @desktop {
@@ -419,7 +446,6 @@
       margin-top: 20px;
       margin-bottom: 20px;
       @media @desktop {
-        order: 99;
         width: 47%;
         margin: 0 auto;
         .flex(row wrap);
@@ -490,18 +516,24 @@
           padding-bottom: 5px;
         }
         .testimonial-review {
-          font-size: 1.3rem;
+          font-size: 1rem;
+
           font-style: italic;
           padding-bottom: 5px;
           padding-top: 10px;
+          @media @desktop {
+            font-size: 1.3rem;
+          }
         }
       }
       .hover-dots {
         .flex(row wrap);
         .position(space-evenly, start);
         margin-top: 30px;
+        margin-bottom: 30px;
         @media @desktop {
           margin-top: 40px;
+          margin-bottom: 0;
         }
         .dot-one {
           svg circle {
