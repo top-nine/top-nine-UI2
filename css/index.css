@@ -305,7 +305,6 @@ svg.dot:hover {
 }
 .top-bg header nav a {
   color: #fff;
-  padding: 20px 0px;
 }
 @media (min-width: 500px) {
   .top-bg header nav a {
@@ -410,6 +409,28 @@ svg.dot:hover {
 }
 .top-bg header.team-header {
   height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
+}
+@media (min-width: 500px) {
+  .top-bg header.team-header {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 15px 0px;
+  }
+}
+.top-bg header.team-header nav {
+  height: 125px;
+}
+@media (min-width: 500px) {
+  .top-bg header.team-header nav {
+    height: auto;
+  }
 }
 .description-bg {
   background-color: #f6f9fc;
@@ -832,7 +853,7 @@ svg.dot:hover {
   background-color: #f6f9fc;
 }
 .footer-bg footer {
-  padding: 10px 0px;
+  padding: 30px 0px;
   margin: 0 auto;
   color: #8898aa;
   line-height: 30px;
@@ -895,20 +916,25 @@ svg.dot:hover {
 }
 .meet-bg .meet-wrapper .meet-heading {
   color: #6772e5;
-  margin-bottom: 4%;
+  margin: 20px 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 500px) {
+  .meet-bg .meet-wrapper .meet-heading {
+    margin-bottom: 40px;
+  }
+}
 .meet-bg .meet-wrapper .members {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-evenly;
 }
 @media (min-width: 500px) {
   .meet-bg .meet-wrapper .members {
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -916,6 +942,8 @@ svg.dot:hover {
   }
 }
 .meet-bg .meet-wrapper .members .member-card {
+  width: 70%;
+  margin: 0 auto;
   padding: 20px;
   margin-bottom: 4%;
   background-color: #fff;
@@ -924,11 +952,13 @@ svg.dot:hover {
   transition-property: color, background-color, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   transition-duration: 0.2s;
 }
-.meet-bg .meet-wrapper .members .member-card:hover {
-  transform: scale(1.05);
-  transition-timing-function: ease-in;
-  transition-delay: 0.1s;
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+@media (min-width: 500px) {
+  .meet-bg .meet-wrapper .members .member-card:hover {
+    transform: scale(1.05);
+    transition-timing-function: ease-in;
+    transition-delay: 0.1s;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
 }
 @media (min-width: 500px) {
   .meet-bg .meet-wrapper .members .member-card {
@@ -937,6 +967,7 @@ svg.dot:hover {
 }
 .meet-bg .meet-wrapper .members .member-card .member-img img {
   border-radius: 5px;
+  width: 100%;
 }
 .meet-bg .meet-wrapper .members .member-card .name h3 {
   font-size: 1.5rem;

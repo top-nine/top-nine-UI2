@@ -32,7 +32,6 @@
       }
       a {
         color: #fff;
-        padding: 20px 0px;
         @media @desktop {
           padding: 0;
         }
@@ -135,7 +134,24 @@
   }
   header.team-header {
     height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+    @media @desktop {
+      width: 70%;
+      .flex(row wrap);
+      .position(space-between, center);
+      height: auto;
+      padding: 15px 0px;
+    }
+  nav {
+    height: 125px;
+    @media @desktop {
+      height: auto;
+    }
   }
+  }
+
 }
 // DESCRIPTION
 .description-bg {
@@ -532,7 +548,7 @@
 .footer-bg {
   background-color: #f6f9fc;
   footer {
-    padding: 10px 0px;
+    padding: 30px 0px;
     margin: 0 auto;
     color: #8898aa;
     line-height: 30px;
