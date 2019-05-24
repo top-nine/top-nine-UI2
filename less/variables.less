@@ -1,10 +1,41 @@
 // colors
-@light-blue: #2E8FD1;
-@dark-blue: #01295F;
-@white: #FFFFFF;
-@separator-color: #E3E3E5;
+@light-blue: #2e8fd1;
+@dark-blue: #01295f;
+@dark-white: #ffe;
+@separator-color: #e3e3e5;
+@black: #26262b;
 
 // desktop min-width
 @desktop: (min-width: 500px);
 
+// keyframes
+
+@keyframes twiddle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+  }
+}
+
+@keyframes scrollme {
+  0% {
+    transform: translateZ(0) translate3d(0, 10px, 0);
+  }
+  50% {
+    transform: translateZ(0) translate3d(0, 35px, 0);
+  }
+  100% {
+    transform: translateZ(0) translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 

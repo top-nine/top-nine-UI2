@@ -8,70 +8,237 @@
     <title>Top-Nine</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./components/components.js" async=""></script>
+</head>
 
 <body>
-    <!-- CONTAINER START-->
-    <div class="container">
-        <!-- TOP START-->
-        <div class="top">
-            <!-- TOP LEFT-->
-            <div class="top-left">
-                <div class="heading">
-                    <h1><a href="index.html">TOP-NINE</a></h1>
+    <!-- TOP BACKGROUND START-->
+    <div class="top-bg">
+            <!-- HEADER START-->
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo_transparent.png" alt="logo-img">
+                        <!-- <h1>Top9</h1> -->
+                    </a>
                 </div>
+                <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
                 <nav>
-                    <a href="index.html">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="#">Community</a>
                     <a href="team.html">Team</a>
-                    <a href="#">Jobs</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Support</a>
                 </nav>
-            </div>
-            <!-- TOP LEFT END-->
-            <!-- TOP RIGHT START-->
-            <div class="top-right">
-                <a class="twitter" href="#">Twitter</a>
-                <a class="facebook" href="#">Facebook</a>
-                <a class="instagram" href="#">Instagram</a>
-                <a class="login" href="#">Login</a>
-            </div>
+                <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
+                <div class="top-social">
+                    <a class="fa fa-facebook" href="#"></a>
+                    <a class="fa fa-instagram" href="#"></a>
+                    <a class="fa fa-twitter" href="#"></a>
+                </div>
+                <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
+                <div class="login">
+                        <svg width=18px xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 14">
+                            <a href="http://top-nine-fe.netlify.com/">
+                                <path fill="#FFF"
+                                    d="M12.5 11.75c0-1.24-2.69-2.25-6-2.25s-6 1-6 2.25c0 .46.37.9 1.01 1.25h9.98c.64-.36 1.01-.79 1.01-1.25zM6.5 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z">
+                                </path>
+                            </a>
+                        </svg>
+                        <a id="login" href="http://top-nine-fe.netlify.com/">Login&#8594;</a>
+                    </div>
+            </header>
+            <!-- HEADER END-->
         </div>
-        <!-- TOP END-->
-        <div class="headline">
-            <h2><strong>Top-Nine</strong> is a home for all your favorite things</h2>
-        </div>
-        <div class="description">
-            Have a list of your favorite things? Top-Nine helps you do that. Enter your nine favorite things and have a
-            home for your favorite movies, restaurants, books, and so much more. Never forget your favorite things when
-            talking ever again.
-            <div class="sign-up">
-                Sign up
+    <!-- TOP BACKGROUND END-->
+    <!-- DESCRIPTION START-->
+    <div class="description-bg">
+        <div class="description-headline-wrapper">
+            <div class="headline">
+                A home for your favorite things
             </div>
-        </div>
-        <div class="steps">
-            <ul>
-                <li>Sign up</li>
-                <li>Write down your favorite things</li>
-                <li>Change them if you'd like</li>
-                <li>Login to show your friends your favorite movies,restaurants, books, and more</li>
-            </ul>
-        </div>
-        <div class="why">
-            <div class=why-heading>
-                <h2>Why we made this</h2>
+            <div class="description-wrapper">
+                <div class="description-img">
+                    <img src="img/standing-8.svg" alt="description-img">
+                </div>
+                <div class="description">
+                    <div class="description-question-and-answer">
+                        <div class="description-question">Have a list of favorite things?</div>
+                        <div class="description-answer">Enter Top9</div>
+                    </div>
+                    <div class="description-text">
+                        <ul>
+                            <li class="long">Share your nine favorite things and have a home for your favorite movies,
+                                restaurants,
+                                books,
+                                and so much more</li>
+                            <li>Check out your friends' favorite things </li>
+                            <li>Never forget your favorite things again</li>
+                        </ul>
+                    </div>
+                    <div class="start-button">
+                        <a href="http://top-nine-fe.netlify.com/">start now </a>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li>We got sick of forgetting our favorite things</li>
-                <li>Our favorite things are the things we cherish. </li>
-                <li>You don't want to be forgetting them when sharing </li>
-                <li>Top-nine takes care of that</li>
-            </ul>
         </div>
     </div>
-    <!-- CONTAINER END -->
-    <footer>
-        <p></p>
-    </footer>
+    <!-- DESCRIPTION END-->
+    <!-- STEPS START-->
+    <div class="steps-bg">
+        <div class="steps-wrapper">
+            <div class="steps">
+                <ul>
+                    <li>Jot down your favorite things</li>
+                    <li>Change, Modify, or Add to them</li>
+                    <li>Remember your films, restaurants, books, and more</li>
+                </ul>
+            </div>
+            <div class="steps-img">
+                <img src="img/sitting-8.svg" alt="steps-img">
+            </div>
+        </div>
+    </div>
+    <!-- STEPS END-->
+    <!-- WHY START-->
+    <div class="why-bg">
 
+        <div class="why-wrapper">
+            <div class="why-headings-text">
+                <div class=why-headings>
+                    <div class="why-question">
+                        Our Story
+                    </div>
+                    <div class="why-answer">We got sick of forgetting our favorite things</div>
+                </div>
+                <div class="why-text">
+                    <ul>
+                        <li>We wanted a gorgeous, simple interface</li>
+                        <li>So we made one</li>
+                        <li>We hope you enjoy using it</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="why-img">
+                <img src="img/idea.png" alt="why-img">
+            </div>
+        </div>
+    </div>
+    <!-- WHY END-->
+    <!-- TESTIMONIALS START-->
+    <div class="testimonials-bg">
+        <div class="testimonials-video-wrapper">
+            <div class="testimonials-dots-wrapper">
+                <div class="testimonials-wrapper displayed" data-pair="1">
+                    <div class="testimonials-img">
+                        <img src="https://thumbor.forbes.com/thumbor/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76b4b84bbe6f24ad99c370%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D0%26cropX2%3D4000%26cropY1%3D0%26cropY2%3D4000"
+                            alt="testimonial-img">
+                    </div>
+                    <div class="testimonial-name">
+                        Bill Gates
+                    </div>
+                    <div class="testimonial-person-title">
+                        Co-founder - Microsoft
+                    </div>
+                    <div class="testimonial-review">
+                        "Using Top9 has brought me great joy."
+                    </div>
+                </div>
+                <div class="testimonials-wrapper hidden" data-pair="2">
+                    <div class="testimonials-img">
+                        <img src="https://specials-images.forbesimg.com/imageserve/5babb7f1a7ea4342a948b79a/416x416.jpg?background=000000&cropX1=1406&cropX2=2442&cropY1=1827&cropY2=2864"
+                            alt="testimonial-img2">
+                    </div>
+                    <div class="testimonial-name">
+                        Warren Buffett
+                    </div>
+                    <div class="testimonial-person-title">
+                        CEO - Berkshire Hathaway
+                    </div>
+                    <div class="testimonial-review">
+                        "Top9 has always been wonderful to use."
+                    </div>
+                </div>
+                <div class="testimonials-wrapper hidden" data-pair="3">
+                    <div class="testimonials-img">
+                        <img src="https://specials-images.forbesimg.com/imageserve/5c76b7d331358e35dd2773a9/416x416.jpg?background=000000&cropX1=0&cropX2=4401&cropY1=0&cropY2=4401"
+                            alt="testimonial-img3">
+                    </div>
+                    <div class="testimonial-name">
+                        Mark Zuckerberg
+                    </div>
+                    <div class="testimonial-person-title">
+                        CEO - Facebook
+                    </div>
+                    <div class="testimonial-review">
+                        "Top9 is an incredible force for good."
+                    </div>
+                </div>
+                <div class="hover-dots">
+                    <div class="dot-one">
+                        <svg class="dot" data-pair="1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" />
+                        </svg>
+                    </div>
+
+                    <div class="dot-two">
+                        <svg class="dot" data-pair="2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" />
+                        </svg>
+                    </div>
+                    <div class="dot-three">
+                        <svg class="dot" data-pair="3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/KlV0fyDC3Gc?start=42"
+                    frameborder="0" allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- TESTIMONIALS END-->
+    <!-- FOOTER START-->
+    <div class="footer-bg">
+        <footer>
+            <div class="column">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Nitro</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Partner Program</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy & terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- FOOTER END-->
 </body>
 
 </html>

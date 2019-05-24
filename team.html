@@ -5,75 +5,179 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top-Nine</title>
+    <title>Top-Nine-Team</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./components/components.js" async=""></script>
+</head>
 
 <body>
-    <!-- CONTAINER START-->
-    <div class="container">
-        <!-- TOP START-->
-        <div class="top">
-            <!-- TOP LEFT-->
-            <div class="top-left">
-                <div class="heading">
-                    <h1><a href="index.html">TOP-NINE</a></h1>
+    <!-- TOP BACKGROUND START-->
+    <div class="top-bg">
+        <!-- HEADER START-->
+        <header class="team-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo_transparent.png" alt="logo-img">
+                    <!-- <h1>Top9</h1> -->
+                </a>
+            </div>
+            <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Community</a>
+                <a href="team.html">Team</a>
+                <a href="#">Careers</a>
+                <a href="#">Support</a>
+            </nav>
+            <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
+            <div class="top-social">
+                <a class="fa fa-facebook" href="#"></a>
+                <a class="fa fa-instagram" href="#"></a>
+                <a class="fa fa-twitter" href="#"></a>
+            </div>
+            <div class="divider" style="border-right: 1px solid rgb(211,211,211); height: 30px; margin-left: 10px; margin-right: 10px;"></div>
+            <div class="login">
+                    <svg width=18px xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 14">
+                        <a href="http://top-nine-fe.netlify.com/">
+                            <path fill="#FFF"
+                                d="M12.5 11.75c0-1.24-2.69-2.25-6-2.25s-6 1-6 2.25c0 .46.37.9 1.01 1.25h9.98c.64-.36 1.01-.79 1.01-1.25zM6.5 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z">
+                            </path>
+                        </a>
+                    </svg>
+                    <a id="login" href="http://top-nine-fe.netlify.com/">Login&#8594;</a>
                 </div>
-                <nav>
-                    <a href="index.html">About</a>
-                    <a href="team.html">Team</a>
-                    <a href="#">Jobs</a>
-                </nav>
-            </div>
-            <!-- TOP LEFT END-->
-            <!-- TOP RIGHT START-->
-            <div class="top-right">
-                <a class="twitter" href="#">Twitter</a>
-                <a class="facebook" href="#">Facebook</a>
-                <a class="instagram" href="#">Instagram</a>
-                <a class="login" href="#">Login</a>
-            </div>
-        </div>
-        <!-- TOP END-->
-        <!-- TOP END-->
-        <div class="container">
-            <div class=meet-heading>
-                <h2>Meet the Team</h2>
+        </header>
+        <!-- HEADER END-->
+    </div>
+    <!-- TOP BACKGROUND END-->
+    <div class="meet-bg">
+        <div class="meet-wrapper">
+            <div class="meet-heading">
+                Meet the Team
             </div>
             <section class="members">
-                <div class=member>
-                    <img src="imageurl" alt="person-img">
-                    <h3>Brad Mortenson</h3>
-                    <h4>CEO, Computer Science</h4>
+                <div class=member-card>
+                    <div class="member-img">
+                        <img src="https://ca.slack-edge.com/T4JUEB3ME-UBPUY6Z6U-d70f2e091786-1024" alt="person-img">
+                    </div>
+                    <div class="name">
+                        <h3>Brad Mortensen</h3>
+                    </div>
+                    <div class="title">
+                        <h4>CEO, Computer Science</h4>
+                    </div>
+                    <div class="social">
+                        <a class="fa fa-facebook-square" href="#"></a>
+                        <a class="fa fa-twitter-square" href="#"></a>
+                        <a class="fa fa-github" href="#"></a>
+                    </div>
                 </div>
-                <div class=member>
-                    <img src="imageurl" alt="person-img">
-                    <h3>Steve Mugenzi</h3>
-                    <h4>CTO, Back-end</h4>
+                <div class=member-card>
+                    <div class="member-img">
+                        <img src="https://ca.slack-edge.com/T4JUEB3ME-UFECR9TM5-2a702089c2da-1024" alt="person-img">
+                    </div>
+                    <div class="name">
+                        <h3>Steve Mugenzi</h3>
+                    </div>
+                    <div class="title">
+                        <h4>CTO, Back-end</h4>
+                    </div>
+                    <div class="social">
+                        <a class="fa fa-facebook-square" href="#"></a>
+                        <a class="fa fa-twitter-square" href="#"></a>
+                        <a class="fa fa-github" href="#"></a>
+                    </div>
                 </div>
-                <div class=member>
-                    <img src="imageurl" alt="person-img">
-                    <h3>Chris Raffle</h3>
-                    <h4>COO, Front-end</h4>
+                <div class=member-card>
+                    <div class="member-img">
+                        <img src="https://ca.slack-edge.com/T4JUEB3ME-UFVUEC918-1fdf146ec13a-1024" alt="person-img">
+                    </div>
+                    <div class="name">
+                        <h3>Chris Riffle</h3>
+                    </div>
+                    <div class="title">
+                        <h4>COO, Front-end</h4>
+                    </div>
+                    <div class="social">
+                        <a class="fa fa-facebook-square" href="#"></a>
+                        <a class="fa fa-twitter-square" href="#"></a>
+                        <a class="fa fa-github" href="#"></a>
+                    </div>
                 </div>
-                <div class=member>
-                    <img src="imageurl" alt="person-img">
-                    <h3>Jean Lafontant</h3>
-                    <h4>Senior UI Developer</h4>
+                <div class=member-card>
+                    <div class="member-img">
+                        <img src="https://ca.slack-edge.com/T4JUEB3ME-UGE33EDE3-1a6c5df6f928-1024" alt="person-img">
+                    </div>
+                    <div class="name">
+                        <h3>Jean Lafontant</h3>
+                    </div>
+                    <div class="title">
+                        <h4>Senior UI Developer</h4>
+                    </div>
+                    <div class="social">
+                        <a class="fa fa-facebook-square" href="#"></a>
+                        <a class="fa fa-twitter-square" href="#"></a>
+                        <a class="fa fa-github" href="#"></a>
+                    </div>
                 </div>
-                <div class=member>
-                    <img src="imageurl" alt="person-img">
-                    <h3>Marcus Kwan</h3>
-                    <h4>UI Developer</h4>
+                <div class=member-card>
+                    <div class="member-img">
+                        <img src="https://ca.slack-edge.com/T4JUEB3ME-UHJNCRX8R-0f98e78c0e29-1024" alt="person-img">
+                    </div>
+                    <div class="name">
+                        <h3>Marcus Kwan</h3>
+                    </div>
+                    <div class="title">
+                        <h4>UI Developer</h4>
+                    </div>
+                    <div class="social">
+                        <a class="fa fa-facebook-square" href="#"></a>
+                        <a class="fa fa-twitter-square" href="#"></a>
+                        <a class="fa fa-github" href="#"></a>
+                    </div>
                 </div>
             </section>
         </div>
-        <!-- CONTAINER END -->
+    </div>
+    </div>
+    <div class="footer-bg">
         <footer>
-            <p></p>
+            <div class="column">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Nitro</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Partner Program</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy & terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
         </footer>
-
+    </div>
 </body>
 
 </html>

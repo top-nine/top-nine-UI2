@@ -2,13 +2,39 @@
   box-sizing: border-box;
 }
 
-html {
+body {
+  background: #fff;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "pnum";
+  font-feature-settings: "pnum";
+  font-variant-numeric: proportional-nums;
 }
 
-html,
-body {
-  font-family: "Open-Sans", sans-serif;
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  @media @desktop {
+    max-width: 1000px;
+    .flex(column wrap);
+    .position(space-between, center);
+  }
 }
 
 h1,
@@ -20,19 +46,23 @@ h5 {
 }
 
 h1 {
-  font-size: 5rem;
-}
-
-h2 {
   font-size: 4rem;
 }
 
-h3 {
+h2 {
   font-size: 3rem;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
 }
 
 strong {
@@ -50,15 +80,40 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.container {
-  max-width: 450px;
-  width: 100%;
-  margin: 0 auto;
-  @media @desktop {
-    max-width: 1000px;
+a:visited {
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+.fa-home {
+  font-size: 5rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+svg.dot {
+  width: 10px;
+  fill: #525f7f;
+  &:hover {
+    opacity: 0.5;
   }
+}
+
+.displayed {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }

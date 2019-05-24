@@ -1,4 +1,106 @@
+.meet-bg {
+  background-color: #f6f9fc;
+  border-bottom: 2px solid rgba(207, 215, 223, 0.25);
+  .meet-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    @media @desktop {
+      height: auto;
+      width: 45%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    .meet-heading {
+      color: #6772e5;
+      margin: 20px 0px;
+      font-size: 2.5rem;
+      text-align: center;
+      @media @desktop {
+        margin-bottom: 40px;
+        font-size: 3rem;
+      }
+    }
+    .members {
+      .flex(column wrap);
+    justify-content: space-evenly;
+      @media @desktop {
+        height: auto;
+        .flex(row wrap);
+        .position(space-between, center);
+      }
+      .member-card {
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 4%;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+          0 8px 16px -8px rgba(0, 0, 0, 0.3),
+          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+        transition-property: color, background-color, box-shadow, transform,
+          -webkit-box-shadow, -webkit-transform;
+        transition-duration: 0.2s;
+        @media @desktop {
+          &:hover {
+            transform: scale(1.05);
+            transition-timing-function: ease-in;
+            transition-delay: 0.1s;
+            box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+              0 3px 6px rgba(0, 0, 0, 0.08);
+          }
+        }
+        @media @desktop {
+          width: 47%;
+        }
+        .member-img {
+          img {
+            border-radius: 5px;
+            width: 100%;
+          }
+        }
+        .name {
+          h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            font-weight: 400;
+            @media @desktop {
+              font-size: 2rem;
+            }
+          }
+        }
+        .title {
+          h4 {
+            margin-top: 15px;
+            opacity: 0.5;
+            @media @desktop {
+              font-size: 1rem;
+            }
+          }
+        }
+        .social {
+          margin-top: 15px;
+          a.fa {
+            padding-right: 4%;
+          }
+          a.fa-facebook-square {
+            color: #3b5998;
+          }
 
-.members {
-    .flex(row wrap);
+          a.fa-twitter-square {
+            color: #55acee;
+            &:hover {
+              animation-name: twiddle;
+              animation-duration: 0.5s;
+              animation-iteration-count: infinite;
+            }
+          }
+          a.fa-github {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
 }
